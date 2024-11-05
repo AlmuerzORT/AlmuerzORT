@@ -15,6 +15,19 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.listaEstablecimientos = BD.ObtenerLugares();
+        ViewBag.listaRestricciones = BD.ObtenerRestricciones();
         return View();
+    }
+
+    public IActionResult VerEstablecimiento(int idEstablecimiento)
+    {
+        ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
+        return View("Establecimiento");
+    }
+
+    public IActionResult VerLugaresXRestriccion(int idRestriccion){
+        ViewBag.Restriccionn = BD.ObtenerRestriccion(idRestriccion); //HACER FUNCION EN BD
+        return View("LugaresRestriccion");
     }
 }

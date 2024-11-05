@@ -1,5 +1,6 @@
 using System.Data.SqlClient;
 using Dapper;
+using System.Collections.Generic;
 
 static class BD{
     private static string _ConnectionString = @"Server=localhost; DataBase=AlmuerzORT; Trusted_Connection=True";
@@ -54,4 +55,38 @@ static class BD{
         }
         
     }
+
+    public static List<Establecimiento> ObtenerLugares(){
+        string SQL = "SELECT * FROM Establecimientos";
+        List <Establecimiento> listaLugares = new List<Establecimiento>();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            listaLugares = db.Query<Establecimiento>(SQL).ToList();
+        }
+
+        return listaLugares;
+    }
+
+    public static Establecimiento ObtenerLugar(int idEstablecimiento){
+        string SQL = "SELECT * FROM Establecimientos WHERE id_lugar = @pidEstablecimiento";
+        Establecimiento lugar = new Establecimiento();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            lugar = db.QueryFirstOrDefault<Establecimiento>(SQL, new{@pidEstablecimiento = idEstablecimiento});
+        }
+
+        return lugar;
+    }
+
+    public static List<Restriccion> ObtenerRestricciones(){
+        string SQL = "SELECT * FROM Restricciones";
+        List <Restriccion> listaRestriccion = new List<Restriccion>();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            listaRestriccion = db.Query<Restriccion>(SQL).ToList();
+        }
+
+        return listaRestriccion;
+    }
+
 }
