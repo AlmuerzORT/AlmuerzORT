@@ -1,24 +1,20 @@
-
-<div>
-    <img src="/img/FondoLogin.jpg" alt="FondoLogin" class="login-image">
-</div>
-    <div class="login-container">
-        <div class="login-card">
-            <div class="form-side">
-                <img src="/img/Recurso 3.svg" alt="Logo" class="AlmuerzORT-image">
-                <h2>Iniciar sesión</h2>
-                <p class="error-message">@ViewBag.mensajeError</p>
-                <form method="post" action='@Url.Action("VerificarInicioSesion","Account")'>
-                    <label for="dni">Correo electrónico</label>
-                    <input type="text" id="dni" name="dni" placeholder="tucorreo@dominio.com">
-                    
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" id="contraseña" name="contraseña" placeholder="********">
-                    
-                    <button type="submit">Iniciar Sesión</button>
-                </form>
-                <a href='@Url.Action("Olvide","Account")'>Olvide mi contraseña</a>
-                <a href='@Url.Action("Registrarse","Account")'>No tengo cuenta</a>
-            </div>
+<div class="login-container">
+    <div class="login-card">
+        <div class="form-side">
+            <img src="/img/Recurso 3.svg" alt="Logo" class="AlmuerzORT-image">
+            <h2>Iniciar sesión</h2>
+            <p class="error-message">@ViewBag.mensajeError</p>
+            <form method="post" action='@Url.Action("VerificarInicioSesion","Account")'>
+                <label for="dni">Correo electrónico</label>
+                <input type="text" id="dni" name="dni" placeholder="DNI">
+                
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="********">
+                
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <a href='@Url.Action("Olvide","Account")'>Olvidé mi contraseña</a>
+            <a href='@Url.Action("Registrarse","Account")'>No tengo cuenta</a>
         </div>
     </div>
+</div>
