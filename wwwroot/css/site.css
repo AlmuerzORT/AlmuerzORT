@@ -14,22 +14,50 @@ body {
   padding: 10px;
 }
 
+.register-container {
+  background-image: url('/img/FondoLogin.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 400px;
+}
+
+.register-form {
+  background: white;
+  padding: 40px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .login-container {
+  background-image: url('/img/FondoLogin.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  padding-right: 400px;
 }
 
 .login-card {
-  display: flex;
-  max-width: 100%;
-  width: 100%;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  overflow: hidden;
+  width: 500px;
+  height: 600px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: -500px;
 }
 
 .login-image {
@@ -42,19 +70,20 @@ body {
 }
 
 .AlmuerzORT-image {
-  width: 30%;
+  width: 140px;
   height: auto;
-  margin-left: 36%;
+  margin-bottom: 20px;
 }
 
 h2 {
-
   text-align: center;
 }
 
 .form-side {
-  width: 50%;
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .form-side h2 {

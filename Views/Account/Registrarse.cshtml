@@ -1,33 +1,35 @@
-<p>REGISTRARSE</p>
-<p>@ViewBag.mensajeError</p>
+<div class="register-container">
+    <div class="register-form">
+        <h2>REGISTRARSE</h2>
+        <p>@ViewBag.mensajeError</p>
 
-<form method= "post" action='@Url.Action("GuardarRegistro","Account")' onsubmit="return VerificarForm()">
-    Nombre: <br>
-    <input type="text" id="nombre" name="nombre" required>
-    </br>
-    Apellido: <br>
-    <input type="text" id="apellido" name="apellido" required>
-    </br>
-    Email:<br>
-    <input type="text" id="mail" name="mail">
-    </br>
-    Usuario:<br>
-    <input type="text" id="usuario" name="usuario"> 
-    </br>
-    DNI:<br>
-    <input type="text" id="dni" name="dni"> 
-    </br>
-    Descripción breve:<br>
-    <input type="text" id="descripcion" name="descripcion"> 
-    </br>
-    Contraseña:<br>
-    <input type="password" id="contraseña" onKeyUp="VerificarContraseña()" name="contraseña">
-    </br>
-    <div id="Mas8">Debe contener mas de 8 caracteres</div>
-    <div id="Mayusculas">Debe contener al menos 1 mayuscula</div>
-    <div id="Especiales">Debe contener al menos 1 caracter especial</div>
+        <form method="post" action='@Url.Action("GuardarRegistro","Account")' onsubmit="return VerificarForm()">
+            <label>Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
 
-    <div id="contraseñaNoValida"></div>
-    <input type="submit" name="Registrarse">
- 
-</form>
+            <label>Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <label>Email:</label><br>
+            <input type="text" id="mail" name="mail" required><br>
+
+            <label>Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" required><br>
+
+            <label>DNI:</label><br>
+            <input type="text" id="dni" name="dni" required><br>
+
+            <label>Descripción breve:</label><br>
+            <input type="text" id="descripcion" name="descripcion"><br>
+
+            <label>Contraseña:</label><br>
+            <input type="password" id="contraseña" onkeyup="VerificarContraseña()" name="contraseña" required><br>
+
+            <div id="Mas8">Debe contener más de 8 caracteres</div>
+            <div id="Mayusculas">Debe contener al menos 1 mayúscula</div>
+            <div id="Especiales">Debe contener al menos 1 caracter especial</div>
+
+            <input type="submit" value="Registrarse">
+        </form>
+    </div>
+</div>

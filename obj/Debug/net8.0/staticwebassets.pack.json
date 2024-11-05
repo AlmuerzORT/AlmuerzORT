@@ -5,7 +5,15 @@
       "PackagePath": "staticwebassets\\Data\\AlmuerzORT.sql"
     },
     {
+<<<<<<< HEAD
       "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\css\\site.css",
+=======
+      "Id": "Z:\\2024\\Programacion\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Thumbs.db"
+    },
+    {
+      "Id": "Z:\\2024\\Programacion\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\css\\site.css",
+>>>>>>> 35306d7e9a547a24b55871ddd153db61c7346723
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {

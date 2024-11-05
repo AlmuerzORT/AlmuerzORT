@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "4omm+WwtjEiCS13GH0gILa/NtdoPhmmP37otoEs0s5c=",
+=======
+  "Hash": "0eEIyOC2A6GUNRj2xuTNoknxLq7cjMiuhoTB9esXKzk=",
+>>>>>>> 35306d7e9a547a24b55871ddd153db61c7346723
   "Source": "AlmuerzORT",
   "BasePath": "_content/AlmuerzORT",
   "Mode": "Default",
@@ -376,6 +380,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "Z:\\2024\\Programacion\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\Thumbs.db",
+      "SourceId": "AlmuerzORT",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2024\\Programacion\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "BasePath": "_content/AlmuerzORT",
+      "RelativePath": "Thumbs.db",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Thumbs.db"
     }
   ]
 }
