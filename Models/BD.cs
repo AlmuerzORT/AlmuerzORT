@@ -78,15 +78,38 @@ static class BD{
         return lugar;
     }
 
-    public static List<Restriccion> ObtenerRestricciones(){
+    public static List<Restricciones> ObtenerRestricciones(){
         string SQL = "SELECT * FROM Restricciones";
-        List <Restriccion> listaRestriccion = new List<Restriccion>();
+        List <Restricciones> listaRestriccion = new List<Restricciones>();
 
         using(SqlConnection db=new SqlConnection(_ConnectionString)){
-            listaRestriccion = db.Query<Restriccion>(SQL).ToList();
+            listaRestriccion = db.Query<Restricciones>(SQL).ToList();
         }
 
         return listaRestriccion;
+    }
+    
+    public static Restricciones ObtenerRestriccion(int idRestriccion){
+        string SQL = "SELECT * FROM Restricciones WHERE id_restriccion = @pIdRestriccion";
+        Restricciones restriccion = new Restricciones();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            restriccion = db.QueryFirstOrDefault<Restricciones>(SQL, new{@pIdRestriccion = idRestriccion});
+        }
+
+        return restriccion;
+    }
+
+    public static List<Establecimiento> ObtenerLugaresRestriccion(Restricciones restric){
+        string SQL = "SELECT * FROM Establecimientos INNER JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar INNER JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato INNER JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE Restricciones.id_restriccion = @pid_restriccion";
+        List <Establecimiento> listaLugares = new List<Establecimiento>();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            listaLugares = db.Query<Establecimiento>(SQL, new{@pid_restriccion = restric.id_restriccion}).ToList();
+        }
+
+        return listaLugares;
+
     }
 
 }

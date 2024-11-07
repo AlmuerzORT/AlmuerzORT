@@ -27,7 +27,11 @@ public class HomeController : Controller
     }
 
     public IActionResult VerLugaresXRestriccion(int idRestriccion){
-        ViewBag.Restriccionn = BD.ObtenerRestriccion(idRestriccion); //HACER FUNCION EN BD
+        Restricciones Restriccionn = BD.ObtenerRestriccion(idRestriccion);
+        ViewBag.ListaLugaresRestriccion = BD.ObtenerLugaresRestriccion(Restriccionn);
+
+        ViewBag.resti = Restriccionn;
+        
         return View("LugaresRestriccion");
     }
 }
