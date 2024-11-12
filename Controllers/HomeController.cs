@@ -35,7 +35,13 @@ public class HomeController : Controller
     }
 
     public IActionResult lugaresMejoresCalifiados(int idEstablecimiento){
-         ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
+        ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
         return View("Establecimiento");
+    }
+    [HttpPost]
+    public int GuardarMeGusta(int id_lugar)
+    {
+        int MG = BD.GuardarMeGusta(id_lugar);
+        return MG;
     }
 }

@@ -45,3 +45,20 @@ function VerificarForm(){
         return false;
     }
 }
+
+function GuardarMeGusta(id)
+{
+    $.ajax(
+        {
+            url: '/Home/GuardarMeGusta',
+            type: 'POST',
+            dataType: 'JSON',
+            data: {id_lugar: id},
+            success: function (response)
+            {
+                $("#MeGusta").html("Me Gusta:" + response);
+                //inabiolitar boton parano dar mas de un like
+            }
+        }
+    );
+}

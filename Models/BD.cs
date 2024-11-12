@@ -55,6 +55,23 @@ static class BD{
         }
         
     }
+    public static int GuardarMeGusta(int id_lugar){
+        string SQL = "UPDATE Establecimientos SET MeGusta = MeGusta + 1 WHERE id_lugar = @pid"; 
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            db.Execute(SQL,new{ pid = id_lugar});
+        }
+        return ObtenerMeGusta(id_lugar);
+    }
+    public static int ObtenerMeGusta(int idEstablecimiento){
+        string SQL = "SELECT * FROM Establecimientos WHERE id_lugar = @pidEstablecimiento";
+        Establecimiento lugar = new Establecimiento();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            lugar = db.QueryFirstOrDefault<Establecimiento>(SQL, new{@pidEstablecimiento = idEstablecimiento});
+        }
+
+        return lugar.MeGusta;
+    }
 
     public static List<Establecimiento> ObtenerLugares(){
         string SQL = "SELECT * FROM Establecimientos";
