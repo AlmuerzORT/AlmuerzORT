@@ -17,6 +17,7 @@ public class HomeController : Controller
     {
         ViewBag.listaEstablecimientos = BD.ObtenerLugares();
         ViewBag.listaRestricciones = BD.ObtenerRestricciones();
+        ViewBag.listaMejoresCalificados = BD.ObtenerMejoresCalificados();
         return View();
     }
 
@@ -28,10 +29,13 @@ public class HomeController : Controller
 
     public IActionResult VerLugaresXRestriccion(int idRestriccion){
         Restricciones Restriccionn = BD.ObtenerRestriccion(idRestriccion);
-        ViewBag.ListaLugaresRestriccion = BD.ObtenerLugaresRestriccion(Restriccionn);
-
-        ViewBag.resti = Restriccionn;
-        
+        ViewBag.Restri = Restriccionn;
+        ViewBag.ListaLugaresRestriccion = BD.ObtenerLugaresRestriccion(Restriccionn);   
         return View("LugaresRestriccion");
+    }
+
+    public IActionResult lugaresMejoresCalifiados(int idEstablecimiento){
+         ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
+        return View("Establecimiento");
     }
 }

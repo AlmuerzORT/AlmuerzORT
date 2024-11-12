@@ -72,3 +72,16 @@
     </div>
   </div>
 }
+
+<p>Mejores Calificados </p>
+@foreach(Establecimiento item in ViewBag.listaMejoresCalificados){
+  //AGREGAR item.FOTO (BASE DE DATOS)
+      <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">@item.nombre</h5>
+      <p class="card-text">@item.direccion</p>
+      <a href='@Url.Action("lugaresMejoresCalifiados","Home", new{idEstablecimiento = @item.id_lugar})' class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+}

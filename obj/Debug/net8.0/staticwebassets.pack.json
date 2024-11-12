@@ -5,15 +5,11 @@
       "PackagePath": "staticwebassets\\Data\\AlmuerzORT.sql"
     },
     {
-<<<<<<< HEAD
-      "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\css\\site.css",
-=======
-      "Id": "Z:\\2024\\Programacion\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\Thumbs.db",
+      "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\Thumbs.db",
       "PackagePath": "staticwebassets\\Thumbs.db"
     },
     {
-      "Id": "Z:\\2024\\Programacion\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\css\\site.css",
->>>>>>> 35306d7e9a547a24b55871ddd153db61c7346723
+      "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
@@ -25,12 +21,36 @@
       "PackagePath": "staticwebassets\\img\\Banner - AlmuerzORT.png"
     },
     {
+      "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\CeliacoLogo.png",
+      "PackagePath": "staticwebassets\\img\\CeliacoLogo.png"
+    },
+    {
       "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\FondoLogin.jpg",
       "PackagePath": "staticwebassets\\img\\FondoLogin.jpg"
     },
     {
+      "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\KosherLogo.png",
+      "PackagePath": "staticwebassets\\img\\KosherLogo.png"
+    },
+    {
+      "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 1.svg",
+      "PackagePath": "staticwebassets\\img\\Recurso 1.svg"
+    },
+    {
+      "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 2.svg",
+      "PackagePath": "staticwebassets\\img\\Recurso 2.svg"
+    },
+    {
       "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 3.svg",
       "PackagePath": "staticwebassets\\img\\Recurso 3.svg"
+    },
+    {
+      "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\VeganoLogo.png",
+      "PackagePath": "staticwebassets\\img\\VeganoLogo.png"
+    },
+    {
+      "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\VegetarianoLogo.png",
+      "PackagePath": "staticwebassets\\img\\VegetarianoLogo.png"
     },
     {
       "Id": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\js\\site.js",

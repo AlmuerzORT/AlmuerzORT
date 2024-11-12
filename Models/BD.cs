@@ -101,7 +101,7 @@ static class BD{
     }
 
     public static List<Establecimiento> ObtenerLugaresRestriccion(Restricciones restric){
-        string SQL = "SELECT * FROM Establecimientos INNER JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar INNER JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato INNER JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE Restricciones.id_restriccion = @pid_restriccion";
+        string SQL = "SELECT Establecimientos.nombre, Establecimientos.direccion, Establecimientos.id_lugar, Establecimientos.telefono, Establecimientos.calificacion, Establecimientos.horarios FROM Establecimientos INNER JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar INNER JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato INNER JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE Restricciones.id_restriccion = @pid_restriccion";
         List <Establecimiento> listaLugares = new List<Establecimiento>();
 
         using(SqlConnection db=new SqlConnection(_ConnectionString)){
@@ -110,6 +110,17 @@ static class BD{
 
         return listaLugares;
 
+    }
+
+    public static List<Establecimiento> ObtenerMejoresCalificados(){
+        string SQL = "SELECT TOP 5 * FROM Establecimientos WHERE calificacion > 3";
+        List <Establecimiento> listaLugares = new List<Establecimiento>();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            listaLugares = db.Query<Establecimiento>(SQL).ToList();
+        }
+
+        return listaLugares;
     }
 
 }
