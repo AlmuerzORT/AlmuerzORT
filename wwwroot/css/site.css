@@ -15,11 +15,11 @@ body {
 }
 
 .register-container {
-  background-image: url('/img/FondoLogin.jpg');
-  background-size: cover; 
+  background-image: url("/img/FondoLogin.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -35,11 +35,11 @@ body {
 }
 
 .login-container {
-  background-image: url('/img/FondoLogin.jpg');
-  background-size: cover; 
+  background-image: url("/img/FondoLogin.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -157,6 +157,82 @@ header .navbar-brand {
   font-weight: bold;
 }
 
+.card {
+  width: 192px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #666;
+}
+
+.btn-primary {
+  margin-top: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.nav-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.nav-btn:hover {
+  color: #007bff;
+}
+/* INDEX */
+
+/* INDEX */
+header nav {
+  background-color: #f8f9fa;
+}
+
+header .navbar-brand {
+  font-weight: bold;
+}
+
+.container-section {
+  margin: 20px;
+}
+
+.container-section p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -224,4 +300,21 @@ footer {
   padding: 10px;
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
+}
+
+#establecimiento {
+  padding: 2rem;
+
+  .contenedor {
+    display: flex;
+
+    .img-establecimiento {
+      width: 20rem;
+      border-radius: 2rem;
+    }
+    .img-estrella {
+      width: 4rem;
+      border-radius: 2rem;
+    }
+  }
 }

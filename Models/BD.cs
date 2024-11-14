@@ -55,6 +55,23 @@ static class BD{
         }
         
     }
+    public static int GuardarMeGusta(int id_lugar){
+        string SQL = "UPDATE Establecimientos SET MeGusta = MeGusta + 1 WHERE id_lugar = @pid"; 
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            db.Execute(SQL,new{ pid = id_lugar});
+        }
+        return ObtenerMeGusta(id_lugar);
+    }
+    public static int ObtenerMeGusta(int idEstablecimiento){
+        string SQL = "SELECT * FROM Establecimientos WHERE id_lugar = @pidEstablecimiento";
+        Establecimiento lugar = new Establecimiento();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            lugar = db.QueryFirstOrDefault<Establecimiento>(SQL, new{@pidEstablecimiento = idEstablecimiento});
+        }
+
+        return lugar.MeGusta;
+    }
 
     public static List<Establecimiento> ObtenerLugares(){
         string SQL = "SELECT * FROM Establecimientos";
@@ -101,7 +118,7 @@ static class BD{
     }
 
     public static List<Establecimiento> ObtenerLugaresRestriccion(Restricciones restric){
-        string SQL = "SELECT * FROM Establecimientos INNER JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar INNER JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato INNER JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE Restricciones.id_restriccion = @pid_restriccion";
+        string SQL = "SELECT Establecimientos.nombre, Establecimientos.direccion, Establecimientos.id_lugar, Establecimientos.telefono, Establecimientos.calificacion, Establecimientos.horarios FROM Establecimientos INNER JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar INNER JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato INNER JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE Restricciones.id_restriccion = @pid_restriccion";
         List <Establecimiento> listaLugares = new List<Establecimiento>();
 
         using(SqlConnection db=new SqlConnection(_ConnectionString)){
@@ -110,6 +127,22 @@ static class BD{
 
         return listaLugares;
 
+    }
+
+    public static List<Establecimiento> ObtenerMejoresCalificados(){
+        string SQL = "SELECT TOP 5 * FROM Establecimientos WHERE calificacion > 3";
+        List <Establecimiento> listaLugares = new List<Establecimiento>();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            listaLugares = db.Query<Establecimiento>(SQL).ToList();
+        }
+
+        return listaLugares;
+    }
+
+    public static int actualizarCalificacion(int id_estrella, int calificacion){
+       // string SQL = "UPDATE Establecimientos SET Calificacion = Calificacion + 1 WHERE id_lugar = @pid"; --- actualizar bd (cuando este la calificacion)
+       return calificacion;
     }
 
 }

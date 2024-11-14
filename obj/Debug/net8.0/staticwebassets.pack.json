@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
       "Id": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Banner - AlmuerzORT.png",
       "PackagePath": "staticwebassets\\img\\Banner - AlmuerzORT.png"
     },
@@ -51,6 +47,14 @@
     {
       "Id": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\VegetarianoLogo.png",
       "PackagePath": "staticwebassets\\img\\VegetarianoLogo.png"
+    },
+    {
+      "Id": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\estrellaConFondo.png",
+      "PackagePath": "staticwebassets\\img\\estrellaConFondo.png"
+    },
+    {
+      "Id": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\estrellaSinFondo.png",
+      "PackagePath": "staticwebassets\\img\\estrellaSinFondo.png"
     },
     {
       "Id": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\js\\site.js",

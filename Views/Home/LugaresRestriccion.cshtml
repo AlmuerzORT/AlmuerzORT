@@ -1,2 +1,11 @@
-<p>@ViewBag.restri.nombre</p>
-//FOREACH CON LOS LUGARES QUE TIENEN ALGUN PLATO CON ESA RESTRICCION
+<p>@ViewBag.Restri.nombre</p>
+@foreach(Establecimiento item in  ViewBag.ListaLugaresRestriccion){
+      <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">@item.nombre</h5>
+      <p class="card-text">@item.direccion</p>
+      <a href='@Url.Action("VerEstablecimiento","Home", new{idEstablecimiento = @item.id_lugar})' class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+}
