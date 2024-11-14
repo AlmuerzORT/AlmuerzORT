@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT.csproj": {}
+    "J:\\4IB\\Programación\\TP's\\AlmuerzORT\\AlmuerzORT.csproj": {}
   },
   "projects": {
-    "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT.csproj": {
+    "J:\\4IB\\Programación\\TP's\\AlmuerzORT\\AlmuerzORT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT.csproj",
+        "projectUniqueName": "J:\\4IB\\Programación\\TP's\\AlmuerzORT\\AlmuerzORT.csproj",
         "projectName": "AlmuerzORT",
-        "projectPath": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT.csproj",
-        "packagesPath": "C:\\Users\\48043270\\.nuget\\packages\\",
-        "outputPath": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\obj\\",
+        "projectPath": "J:\\4IB\\Programación\\TP's\\AlmuerzORT\\AlmuerzORT.csproj",
+        "packagesPath": "C:\\Users\\gg\\.nuget\\packages\\",
+        "outputPath": "J:\\4IB\\Programación\\TP's\\AlmuerzORT\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\48043270\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
