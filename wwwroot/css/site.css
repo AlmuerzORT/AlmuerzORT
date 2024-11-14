@@ -216,6 +216,7 @@ header .navbar-brand {
 /* INDEX */
 
 /* INDEX */
+
 header nav {
   background-color: #f8f9fa;
 }
@@ -293,7 +294,10 @@ header .navbar-brand {
 .nav-btn:hover {
   color: #007bff;
 }
+
 /* INDEX */
+
+
 
 footer {
   margin-top: 10px;

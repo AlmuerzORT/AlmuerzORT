@@ -78,6 +78,7 @@
 }
 
 <p>Mejores Calificados </p>
+<div class="card-container">
 @foreach(Establecimiento item in ViewBag.listaMejoresCalificados){
   //AGREGAR item.FOTO (BASE DE DATOS)
       <div class="card" style="width: 18rem;">
@@ -90,3 +91,80 @@
   </div>
 }
 </div>
+
+
+<div class="container">
+<p>Recomendaciones del día </p>
+<section class="container py-5">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+<div class="carousel-item active">
+                <div class="row">
+                @foreach(Establecimiento item in ViewBag.listaEstablecimientos)
+{
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen 1">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.nombre</h5>
+                                <p class="card-text">@item.direccion</p>
+                                <a href='@Url.Action("VerEstablecimiento","Home", new{idEstablecimiento = @item.id_lugar})' class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+}
+</div>
+            </div>
+
+            <!-- Slide 2 con las 2 cards restantes -->
+            <div class="carousel-item">
+                <div class="row">
+                
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 5</h5>
+                                <p class="card-text">Descripción de la Card 5.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 6</h5>
+                                <p class="card-text">Descripción de la Card 6.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+                    
+                </div>
+            </div>
+
+
+</div>
+
+
+
+
+
+</div>
+
