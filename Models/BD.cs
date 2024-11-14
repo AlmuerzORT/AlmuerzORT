@@ -140,4 +140,8 @@ static class BD{
         return listaLugares;
     }
 
+    public static bool actualizarCalificacion(int id_estrella, int calificacion){
+        string SQL=""
+    }
+
 }

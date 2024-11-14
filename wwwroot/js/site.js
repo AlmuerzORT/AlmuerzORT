@@ -62,3 +62,18 @@ function GuardarMeGusta(id)
         }
     );
 }
+
+function actualizarEstrella (id, calificacion){
+    console.log("estoy")
+    $.ajax({
+        url: '/Home/ActualizarEstrella',
+        type: 'GET',
+        dataType: 'JSON',
+        data: {id_estrella: id, calificacion},
+        success: function(response){
+            console.log(response)
+        }
+
+    });
+
+}
