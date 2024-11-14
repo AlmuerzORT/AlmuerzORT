@@ -47,6 +47,7 @@
 </div>
 
 <p>Recomendaciones del día </p>
+<div class="card-container">
 @foreach(Establecimiento item in ViewBag.listaEstablecimientos)
 {
     //AGREGAR item.FOTO (BASE DE DATOS)
@@ -59,8 +60,10 @@
     </div>
   </div>
 }
+</div>
 
 <p>Restricciones</p>
+<div class="card-container">
 @foreach(Restricciones item in  ViewBag.listaRestricciones)
 {
   //AGREGAR item.FOTO (BASE DE DATOS)
@@ -72,3 +75,7 @@
     </div>
   </div>
 }
+</div>
+
+
+
