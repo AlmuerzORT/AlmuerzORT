@@ -45,7 +45,9 @@ public class HomeController : Controller
         return MG;
     }
 
-    public bool ActualizarCalificacion(int id_estrella, int calificacion){
+    public int ActualizarCalificacion(int id_estrella, int calificacion){
+        
         return BD.actualizarCalificacion(id_estrella, calificacion);
-    }
+     }
 }
+    

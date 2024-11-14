@@ -140,8 +140,9 @@ static class BD{
         return listaLugares;
     }
 
-    public static bool actualizarCalificacion(int id_estrella, int calificacion){
-        string SQL=""
+    public static int actualizarCalificacion(int id_estrella, int calificacion){
+       // string SQL = "UPDATE Establecimientos SET Calificacion = Calificacion + 1 WHERE id_lugar = @pid"; --- actualizar bd (cuando este la calificacion)
+       return calificacion;
     }
 
 }

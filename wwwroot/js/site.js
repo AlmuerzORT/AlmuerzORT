@@ -63,17 +63,32 @@ function GuardarMeGusta(id)
     );
 }
 
-function actualizarEstrella (id, calificacion){
+function ActualizarCalificacion (id, calificacion){
+    const filledStar = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkgELUJ0b4w4ijfiEZeLhokUSjaa3g3Kds9g&s"
+    const outlinedStar = "https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0"
     console.log("estoy")
     $.ajax({
-        url: '/Home/ActualizarEstrella',
+        url: '/Home/ActualizarCalificacion',
         type: 'GET',
         dataType: 'JSON',
         data: {id_estrella: id, calificacion},
         success: function(response){
-            console.log(response)
-        }
+         const estrellas = $(".img-estrella")
+         
+         for (let index = 0; index < estrellas.length; index++) {
+            const element = estrellas[index];
+            element.src = outlinedStar
+         }
 
+         for (let index = 0; index < response; index++) {
+            const element = estrellas[index];
+            element.src = filledStar
+            
+         }
+        }
     });
 
+
 }
+
+

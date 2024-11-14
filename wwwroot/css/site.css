@@ -15,11 +15,11 @@ body {
 }
 
 .register-container {
-  background-image: url('/img/FondoLogin.jpg');
-  background-size: cover; 
+  background-image: url("/img/FondoLogin.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -35,11 +35,11 @@ body {
 }
 
 .login-container {
-  background-image: url('/img/FondoLogin.jpg');
-  background-size: cover; 
+  background-image: url("/img/FondoLogin.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -220,4 +220,21 @@ footer {
   padding: 10px;
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
+}
+
+#establecimiento {
+  padding: 2rem;
+
+  .contenedor {
+    display: flex;
+
+    .img-establecimiento {
+      width: 20rem;
+      border-radius: 2rem;
+    }
+    .img-estrella {
+      width: 4rem;
+      border-radius: 2rem;
+    }
+  }
 }
