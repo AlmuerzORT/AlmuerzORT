@@ -1,3 +1,7 @@
+using System.Text.Json;
+
+[Serializable]
+
 public class Usuario{
     public int dni {get; set;}
     public string nombre {get; set;}
@@ -19,5 +23,20 @@ public class Usuario{
         contraseña = con;
         descripcion = desc;
     }
+ public override string ToString()
+    {
+        return JsonSerializer.Serialize(this);
+    }
+
+    public static Usuario? FromString(string? json)
+    {
+        if (json is null)
+        {
+            return null;
+        }
+
+        return JsonSerializer.Deserialize<Usuario>(json);
+    }
+
 
 }
