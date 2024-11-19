@@ -505,23 +505,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\48240825\\.nuget\\packages\\": {},
+    "C:\\Users\\48796333\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT.csproj",
+      "projectUniqueName": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT.csproj",
       "projectName": "AlmuerzORT",
-      "projectPath": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT.csproj",
-      "packagesPath": "C:\\Users\\48240825\\.nuget\\packages\\",
-      "outputPath": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\obj\\",
+      "projectPath": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT.csproj",
+      "packagesPath": "C:\\Users\\48796333\\.nuget\\packages\\",
+      "outputPath": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\48240825\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\48796333\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
