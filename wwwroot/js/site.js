@@ -89,6 +89,7 @@ function ActualizarCalificacion (id, calificacion){
     });
 }
 
+
 $('#recipeCarousel').carousel({
     interval: 10000
   })
