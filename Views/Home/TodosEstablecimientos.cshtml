@@ -1,7 +1,8 @@
-<p>@ViewBag.Restri.nombre</p>
+<p>Establecimientos </p>
 
-
-@foreach(Establecimiento item in  ViewBag.ListaLugaresRestriccion){
+@foreach(Establecimiento item in ViewBag.listaEstablecimientos)
+{
+    //AGREGAR item.FOTO (BASE DE DATOS)
       <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">

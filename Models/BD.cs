@@ -145,4 +145,14 @@ static class BD{
        return calificacion;
     }
 
+    public static List<Establecimiento> Busqueda(string buscado){
+        string SQL = "SELECT Establecimientos.nombre, Establecimientos.direccion, Establecimientos.id_lugar, Establecimientos.telefono, Establecimientos.calificacion, Establecimientos.horarios FROM Establecimientos LEFT JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar LEFT JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato LEFT JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE (@buscado = Establecimientos.nombre) OR (@buscado = Restricciones.nombre) OR (@buscado = ComidaxMenu.nombre_plato)";
+        List <Establecimiento> listaLugares = new List<Establecimiento>();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            listaLugares = db.Query<Establecimiento>(SQL, new{@buscado = buscado}).ToList();
+        }
+        return listaLugares;
+    }
+
 }

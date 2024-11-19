@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZUQw6L6VFab8njgUqCLg6J6lafjuun9UzULKbRHZt9M=",
+  "Hash": "NXDXsWtUU7PZoM+8gugb6p4jTalTLnoVRDAUjGTXjY8=",
   "Source": "AlmuerzORT",
   "BasePath": "_content/AlmuerzORT",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AlmuerzORT\\wwwroot",
       "Source": "AlmuerzORT",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\css\\site.css",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\css\\site.css",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\Data\\AlmuerzORT.sql",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\Data\\AlmuerzORT.sql",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "Data/AlmuerzORT.sql",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\Data\\AlmuerzORT.sql"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Banner - AlmuerzORT.png",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Banner - AlmuerzORT.png",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/Banner - AlmuerzORT.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Banner - AlmuerzORT.png"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\CeliacoLogo.png",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\CeliacoLogo.png",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/CeliacoLogo.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\img\\CeliacoLogo.png"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\estrellaConFondo.png",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\estrellaConFondo.png",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/estrellaConFondo.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\img\\estrellaConFondo.png"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\estrellaSinFondo.png",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\estrellaSinFondo.png",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/estrellaSinFondo.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\img\\estrellaSinFondo.png"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\FondoLogin.jpg",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\FondoLogin.jpg",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/FondoLogin.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\img\\FondoLogin.jpg"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\KosherLogo.png",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\KosherLogo.png",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/KosherLogo.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\img\\KosherLogo.png"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 1.svg",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 1.svg",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/Recurso 1.svg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Recurso 1.svg"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 2.svg",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 2.svg",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/Recurso 2.svg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Recurso 2.svg"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 3.svg",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 3.svg",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/Recurso 3.svg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Recurso 3.svg"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\VeganoLogo.png",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\VeganoLogo.png",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/VeganoLogo.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\img\\VeganoLogo.png"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\VegetarianoLogo.png",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\VegetarianoLogo.png",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "img/VegetarianoLogo.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\img\\VegetarianoLogo.png"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\js\\site.js",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\js\\site.js",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\Thumbs.db",
+      "Identity": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\Thumbs.db",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\4°IB\\Programación\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "ContentRoot": "Z:\\2024\\PROG\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
       "RelativePath": "Thumbs.db",
       "AssetKind": "All",
