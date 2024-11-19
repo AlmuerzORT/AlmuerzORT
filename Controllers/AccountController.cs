@@ -21,6 +21,10 @@ public class AccountController : Controller
     public IActionResult IniciarSesion(){
         return View();
     }
+    public IActionResult CerrarSesion(){
+        HttpContext.Session.Remove("user");
+        return RedirectToAction("Index", "Home");
+    }
 
     public IActionResult Registrarse(){
         return View();
@@ -48,11 +52,16 @@ public class AccountController : Controller
             return View ("IniciarSesion");
         }
         else{
-            if(BD.UsuarioRegistrado(dni, contraseña)){
+            Usuario userlogin = BD.UsuarioRegistrado(dni, contraseña);
+            if(userlogin == null){
             ViewBag.mensajeError = "ERROR! Contraseña Incorrecta";
             return View("IniciarSesion");
             }
             else {
+
+                // Aca vamos a guardar el usuario en sesion
+                HttpContext.Session.SetString("user", userlogin.ToString());
+
                 return RedirectToAction("Index", "Home");
             }
         }

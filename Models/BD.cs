@@ -21,13 +21,13 @@ static class BD{
         }
     }
 
-    public static bool UsuarioRegistrado(int dni, string contraseña){
+    public static Usuario UsuarioRegistrado(int dni, string contraseña){
         string SQL = "SELECT * FROM Usuario WHERE dni = @pdni AND contraseña = @pcontraseña";
          Usuario usuarioBase = null;
         using(SqlConnection db=new SqlConnection(_ConnectionString)){
             usuarioBase = db.QueryFirstOrDefault<Usuario>(SQL,new{pdni = dni, pcontraseña = contraseña});
         }
-        return usuarioBase == null;
+        return usuarioBase;
     }
 
     public static bool DatosValidos(int dni, string mail){
@@ -143,6 +143,16 @@ static class BD{
     public static int actualizarCalificacion(int id_estrella, int calificacion){
        // string SQL = "UPDATE Establecimientos SET Calificacion = Calificacion + 1 WHERE id_lugar = @pid"; --- actualizar bd (cuando este la calificacion)
        return calificacion;
+    }
+
+    public static List<Establecimiento> Busqueda(string buscado){
+        string SQL = "SELECT Establecimientos.nombre, Establecimientos.direccion, Establecimientos.id_lugar, Establecimientos.telefono, Establecimientos.calificacion, Establecimientos.horarios FROM Establecimientos LEFT JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar LEFT JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato LEFT JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE (@buscado = Establecimientos.nombre) OR (@buscado = Restricciones.nombre) OR (@buscado = ComidaxMenu.nombre_plato)";
+        List <Establecimiento> listaLugares = new List<Establecimiento>();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            listaLugares = db.Query<Establecimiento>(SQL, new{@buscado = buscado}).ToList();
+        }
+        return listaLugares;
     }
 
 }
