@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlmuerzORT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a69f1c4295c2282ca3e4426cb59f6dc9f43760bb")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c57c105a524c824c440cd84dcd868f4bbbd56953")]
->>>>>>> 0e45370fb5ef752e71c433c8841f66d9334410e4
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a908e99f75ec1bad7a164836f52847b7b60b0cc9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlmuerzORT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlmuerzORT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

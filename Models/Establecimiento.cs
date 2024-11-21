@@ -6,17 +6,19 @@ public class Establecimiento{
     public int calificacion {get; set;}
     public string horarios {get; set;}
     public int MeGusta{get;set;}
+    public string fotos {get; set;}
 
 
     public Establecimiento(){}
 
-    public Establecimiento(string nom, string dire, string telef, int cali, string horar, int mg){
+    public Establecimiento(string nom, string dire, string telef, int cali, string horar, int mg, string ft){
         nombre = nom;
         direccion = dire;
         telefono = telef;
         calificacion = cali;
         horarios = horar;
         MeGusta = mg;
+        fotos = ft;
     }
 
 
