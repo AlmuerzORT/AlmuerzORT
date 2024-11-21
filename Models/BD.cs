@@ -21,13 +21,13 @@ static class BD{
         }
     }
 
-    public static bool UsuarioRegistrado(int dni, string contraseña){
+    public static Usuario UsuarioRegistrado(int dni, string contraseña){
         string SQL = "SELECT * FROM Usuario WHERE dni = @pdni AND contraseña = @pcontraseña";
          Usuario usuarioBase = null;
         using(SqlConnection db=new SqlConnection(_ConnectionString)){
             usuarioBase = db.QueryFirstOrDefault<Usuario>(SQL,new{pdni = dni, pcontraseña = contraseña});
         }
-        return usuarioBase == null;
+        return usuarioBase;
     }
 
     public static bool DatosValidos(int dni, string mail){

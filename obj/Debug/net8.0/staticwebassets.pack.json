@@ -13,8 +13,8 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Banner - AlmuerzORT.png",
-      "PackagePath": "staticwebassets\\img\\Banner - AlmuerzORT.png"
+      "Id": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Banner.png",
+      "PackagePath": "staticwebassets\\img\\Banner.png"
     },
     {
       "Id": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\CeliacoLogo.png",
@@ -27,6 +27,10 @@
     {
       "Id": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\KosherLogo.png",
       "PackagePath": "staticwebassets\\img\\KosherLogo.png"
+    },
+    {
+      "Id": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Logo-AlmuerzORT.png",
+      "PackagePath": "staticwebassets\\img\\Logo-AlmuerzORT.png"
     },
     {
       "Id": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 1.svg",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "n4R+MyWmwwqF+LJDQpB4tjJZ+BNjymZbK9xHbss2mjs=",
+  "Hash": "aUW96a/f6Fos1vJtAHd9uiNLxYqYZGGUaxk2m8GA3S0=",
   "Source": "AlmuerzORT",
   "BasePath": "_content/AlmuerzORT",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "wwwroot\\Data\\AlmuerzORT.sql"
     },
     {
-      "Identity": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Banner - AlmuerzORT.png",
+      "Identity": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Banner.png",
       "SourceId": "AlmuerzORT",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
       "BasePath": "_content/AlmuerzORT",
-      "RelativePath": "img/Banner - AlmuerzORT.png",
+      "RelativePath": "img/Banner.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\Banner - AlmuerzORT.png"
+      "OriginalItemSpec": "wwwroot\\img\\Banner.png"
     },
     {
       "Identity": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\CeliacoLogo.png",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\KosherLogo.png"
+    },
+    {
+      "Identity": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Logo-AlmuerzORT.png",
+      "SourceId": "AlmuerzORT",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\",
+      "BasePath": "_content/AlmuerzORT",
+      "RelativePath": "img/Logo-AlmuerzORT.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logo-AlmuerzORT.png"
     },
     {
       "Identity": "Z:\\ORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\AlmuerzORT\\wwwroot\\img\\Recurso 1.svg",

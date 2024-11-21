@@ -139,24 +139,148 @@ h2 {
   font-weight: bold;
 }
 
-/* INDEX */
-header nav {
-  background-color: #f8f9fa;
+
+.header {
+  background-image: url('/wwwroot/img/Banner.png'); 
+  background-size: cover;
+  padding: 20px 0;
+  height: 500px; 
+}
+/* Estilo para la barra de navegación */
+.navbar {
+  padding: 0;
 }
 
-header .navbar-brand {
+/* Alinear el campo de búsqueda a la izquierda */
+.navbar .d-flex {
+  margin-right: auto;
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+.navbar-nav .nav-link {
+  color: #044199; /* Color predeterminado de los enlaces */
+  padding: 10px 15px; /* Espaciado alrededor de los enlaces */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+/* Estilo para los enlaces de la barra de navegación */
+.navbar-nav .nav-link {
+  color: #044199; /* Color predeterminado de los enlaces */
+  padding: 10px 15px; /* Espaciado alrededor de los enlaces */
+  position: relative; /* Necesario para el efecto de subrayado */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  text-decoration: none; /* Eliminar cualquier subrayado predeterminado */
+}
+
+/* Hover en los enlaces para cambiar color */
+.navbar-nav .nav-link:hover {
+  color: #044199; /* Color de texto cuando se pasa el ratón */
+}
+
+.navbar-nav .nav-link::after {
+  content: ''; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: transparent;
+  border-bottom: 2px solid #044199; 
+  transition: width 0.4s ease, border-color 0.3s ease; 
+}
+
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; 
+  border-color: #044199; 
+}
+
+/* Alinear los enlaces 'Ofertas', 'Establecimiento' y 'Favoritos' a la derecha */
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Estilo específico para el botón 'Iniciar Sesión' */
+.navbar-nav .nav-item a[href*="IniciarSesion"] {
+  background-color: #516CA5; /* Fondo color azul oscuro */
+  color: white; /* Letras blancas */
+  padding: 8px 20px; /* Espaciado alrededor del texto */
+  border-radius: 25px; /* Bordes redondeados */
+  text-transform: uppercase; /* Letras en mayúsculas */
+  font-weight: bold; /* Letras en negrita */
+  text-align: center; /* Centrar el texto */
+}
+
+/* Hover en el botón 'Iniciar Sesión' */
+.navbar-nav .nav-item a[href*="IniciarSesion"]:hover {
+  background-color: #3e4c72; /* Un tono más oscuro de azul en el hover */
+  text-decoration: none; /* Eliminar subrayado en el hover */
+}
+
+/* Estilo de los elementos del menú cuando el usuario está logueado */
+.navbar-nav .nav-item {
+  margin-left: 10px; /* Separación entre los enlaces */
+}
+
+/* Estilo del form de búsqueda */
+.navbar .d-flex .form-control {
+  border-radius: 25px; /* Bordes redondeados */
+  margin-right: 10px; /* Espacio a la derecha del campo de búsqueda */
+}
+
+/* Botón de búsqueda */
+.navbar .d-flex button {
+  border-radius: 25px; /* Bordes redondeados */
+  color: white;
+  background-color: #516CA5; /* Fondo del botón */
+  border: none;
+  padding: 6px 20px;
   font-weight: bold;
 }
 
-.container-section {
-  margin: 20px;
+/* Hover en el botón de búsqueda */
+.navbar .d-flex button:hover {
+  background-color: #3e4c72; /* Fondo más oscuro cuando pasa el mouse */
+  cursor: pointer;
 }
-
-.container-section p {
-  font-size: 24px;
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+}
+.card-title {
+  font-size: 1.25rem;
   font-weight: bold;
 }
+.card-text {
+  color: #555;
+}
 
+/* Footer */
+footer {
+  background-color: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
 .card {
   width: 192px;
   border: 1px solid #ddd;

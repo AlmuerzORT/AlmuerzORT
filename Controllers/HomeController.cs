@@ -15,6 +15,11 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        if (HttpContext.Session.GetString("user")!=null)
+        {
+            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+        }
+        
         ViewBag.listaEstablecimientos = BD.ObtenerLugares();
         ViewBag.listaRestricciones = BD.ObtenerRestricciones();
         ViewBag.listaMejoresCalificados = BD.ObtenerMejoresCalificados();
@@ -23,11 +28,20 @@ public class HomeController : Controller
 
     public IActionResult VerEstablecimiento(int idEstablecimiento)
     {
+        if (HttpContext.Session.GetString("user")!=null)
+        {
+            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+        }
         ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
         return View("Establecimiento");
     }
 
     public IActionResult VerLugaresXRestriccion(int idRestriccion){
+        if (HttpContext.Session.GetString("user")!=null)
+        {
+            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+        }
+
         Restricciones Restriccionn = BD.ObtenerRestriccion(idRestriccion);
         ViewBag.Restri = Restriccionn;
         ViewBag.ListaLugaresRestriccion = BD.ObtenerLugaresRestriccion(Restriccionn);   
@@ -35,6 +49,10 @@ public class HomeController : Controller
     }
 
     public IActionResult lugaresMejoresCalifiados(int idEstablecimiento){
+        if (HttpContext.Session.GetString("user")!=null)
+        {
+            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+        }
         ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
         return View("Establecimiento");
     }
