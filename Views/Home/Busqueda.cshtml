@@ -1,7 +1,7 @@
-<p>@ViewBag.Restri.nombre</p>
+<p> @ViewBag.NoHayResultado </p>
+<p>Resultados de Búsqueda para @ViewBag.Busqueda</p>
 
-
-@foreach(Establecimiento item in  ViewBag.ListaLugaresRestriccion){
+@foreach(Establecimiento item in  ViewBag.Resultado){
       <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">

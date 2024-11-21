@@ -68,6 +68,33 @@ public class HomeController : Controller
         return BD.actualizarCalificacion(id_estrella, calificacion);
      }
 
+    public IActionResult Busqueda(string busqueda){
+        
+         if (HttpContext.Session.GetString("user")!=null)
+        {
+            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+        }
+        
+        ViewBag.Resultado = BD.Busqueda(busqueda);
+
+        if(ViewBag.Resultado == null){
+            ViewBag.NoHayResultado = busqueda + " no fue encontrado";
+        }
+        ViewBag.Busqueda = busqueda;
+        return View();
+    }
+
+    public IActionResult TodosEstablecimientos(){
+        
+        if (HttpContext.Session.GetString("user")!=null)
+        {
+            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+        }
+        
+        ViewBag.listaEstablecimientos = BD.ObtenerLugares();
+        return View ();
+    }
+
     
 }
     

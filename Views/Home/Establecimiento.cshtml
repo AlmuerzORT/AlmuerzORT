@@ -32,8 +32,9 @@
     </div>
 
     <p> @ViewBag.Lugar.nombre </p>
-    <p id="MeGusta">Me Gusta: @ViewBag.Lugar.MeGusta</p>
-    <button onclick="GuardarMeGusta(@ViewBag.Lugar.id_lugar)">Me Gusta</button>
+    <button id="favoriteButton" class="favorite-button" data-lugar-id="1" data-usuario-dni="12345678">
+    <i class="fas fa-heart"></i> <!-- Usando Font Awesome para el ícono -->
+    </button>
 
     //info del lugar (foto, estrellas, enviar reseña, descripcion, boton agregar a favoritos, boton de chat)
 

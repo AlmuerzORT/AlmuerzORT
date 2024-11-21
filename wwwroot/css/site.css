@@ -421,6 +421,28 @@ header .navbar-brand {
 
 /* INDEX */
 
+/*Favoritos*/
+
+.favorite-button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #666;
+  transition: transform 0.2s ease-in-out;
+}
+
+.favorite-button:hover {
+  color: #007bff;
+  transform: scale(1.2); 
+}
+
+.favorite-button.liked {
+  color: #007bff;
+}
+
+/*Favoritos*/
+
 
 
 footer {
