@@ -33,6 +33,7 @@ public class HomeController : Controller
             ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
         }
         ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
+        ViewBag.Menu = BD.ObtenerMenuPorLugar(idEstablecimiento);
         return View("Establecimiento");
     }
 
@@ -56,12 +57,20 @@ public class HomeController : Controller
         ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
         return View("Establecimiento");
     }
+ 
     [HttpPost]
-    public int GuardarMeGusta(int id_lugar)
+    public IActionResult GuardarFavorito(int id_lugar)
     {
-        int MG = BD.GuardarMeGusta(id_lugar);
-        return MG;
+        int dni_usuario = HttpContext.Session.GetInt32("DNI").GetValueOrDefault();
+
+        if (dni_usuario == 0)
+        {
+            return RedirectToAction("Registrarse", "Account");
+        }
+        BD.GuardarFavorito(dni_usuario, id_lugar);
+        return Json(new { success = true });
     }
+
 
     public int ActualizarCalificacion(int id_estrella, int calificacion){
         
@@ -81,7 +90,7 @@ public class HomeController : Controller
             ViewBag.NoHayResultado = busqueda + " no fue encontrado";
         }
         ViewBag.Busqueda = busqueda;
-        return View();
+        return View("ResultadoBusqueda");
     }
 
     public IActionResult TodosEstablecimientos(){
@@ -94,7 +103,27 @@ public class HomeController : Controller
         ViewBag.listaEstablecimientos = BD.ObtenerLugares();
         return View ();
     }
+    [HttpGet]
+    public IActionResult Favoritos()
+    {
+
+        int? dni_usuario = HttpContext.Session.GetInt32("DNI");
+
+        if (dni_usuario != null)
+        {
+            string userName = HttpContext.Session.GetString("UserName");
+            List<Establecimiento> favoritos = BD.ObtenerFavoritos(dni_usuario.Value);
+
+            ViewBag.UserName = userName;
+            ViewBag.Favoritos = favoritos;
+        }
+        
+        return View();
+    }
+
+}
+
 
     
-}
+
     

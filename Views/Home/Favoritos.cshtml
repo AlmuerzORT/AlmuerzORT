@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Favoritos";
+}
+
+@if (ViewBag.UserName != null)
+{
+    <div class="favoritos-container">
+        <h2>Hola, @ViewBag.UserName</h2>
+        <h3>Mis Favoritos</h3>
+
+        @if (ViewBag.Favoritos != null && ((List<Establecimiento>)ViewBag.Favoritos).Count > 0)
+        {
+            <div class="row">
+                @foreach (Establecimiento establecimiento in ViewBag.Favoritos)
+                {
+                    <div class="col-md-4">
+                        <div class="card custom-card">
+                            <img src="@establecimiento.fotos" class="card-img-top" alt="@establecimiento.nombre">
+                            <div class="card-body">
+                                <h5 class="card-title">@establecimiento.nombre</h5>
+                                <p class="card-text">@establecimiento.direccion</p>
+                                <a href='@Url.Action("VerEstablecimiento", "Home", new { idEstablecimiento = establecimiento.id_lugar })' class="btn custom-btn">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p>No tienes establecimientos favoritos.</p>
+        }
+    </div>
+}
+else
+{
+    <div class="login-prompt">
+        <p>Para ver tus favoritos, debes iniciar sesión.</p>
+        <a href='@Url.Action("IniciarSesion", "Account")' class="btn btn-primary">Iniciar sesión</a>
+    </div>
+}

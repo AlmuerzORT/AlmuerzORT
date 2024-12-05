@@ -1,13 +1,24 @@
 <p>@ViewBag.Restri.nombre</p>
 
-
-@foreach(Establecimiento item in  ViewBag.ListaLugaresRestriccion){
-      <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">@item.nombre</h5>
-      <p class="card-text">@item.direccion</p>
-      <a href='@Url.Action("VerEstablecimiento","Home", new{idEstablecimiento = @item.id_lugar})' class="btn btn-primary">Go somewhere</a>
+@if (ViewBag.ListaLugaresRestriccion != null && ViewBag.ListaLugaresRestriccion.Count > 0)
+{
+    <div class="row">
+        @foreach (Establecimiento item in ViewBag.ListaLugaresRestriccion)
+        {
+            <div class="col-md-4">
+                <div class="card custom-card">
+                    <img src="@item.fotos" class="card-img-top" alt="@item.nombre">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.nombre</h5>
+                        <p class="card-text">@item.direccion</p>
+                        <a href='@Url.Action("VerEstablecimiento", "Home", new { idEstablecimiento = item.id_lugar })' class="btn custom-btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
-  </div>
+}
+else
+{
+    <p>No se encontraron lugares disponibles.</p>
 }

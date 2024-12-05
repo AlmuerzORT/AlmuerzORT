@@ -18,74 +18,82 @@
 
 <body>
 
-<header class= "header">
-img
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link active" aria-current="page" href='@Url.Action("Index", "Home")'>Home</a>
-=======
-          <a class="nav-link active" aria-current="page" href='@Url.Action("Index","Home")'>Home</a>
->>>>>>> a908e99f75ec1bad7a164836f52847b7b60b0cc9
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ofertas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='@Url.Action("TodosEstablecimientos","Home")'>Establecimiento</a>
-        </li>
-<<<<<<< HEAD
-       
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-=======
-      <form class="d-flex" role="search" method="GET" action='@Url.Action("Busqueda","Home")'>
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="busqueda" name="busqueda">
-         <input type="submit" value="Search">
->>>>>>> a908e99f75ec1bad7a164836f52847b7b60b0cc9
-      </form>
-      @{
-        if (ViewBag.User != null)
-        {
-            <li class="nav-item">
-            <a class="nav-link" href="#">Favoritos</a>
-            </li>
-            <li class="nav-item">
-                Hola @ViewBag.User.nombre
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href='@Url.Action("CerrarSesion","Account")'>Cerrar Sesion</a>
-            </li>
-            
-        }
-        else
-        {
-            <li class="nav-item">
-            <a class="nav-link" href='@Url.Action("IniciarSesion","Account")'>Iniciar Sesion</a>
-            </li>
+<header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href='@Url.Action("Index", "Home")'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='@Url.Action("Index","Home")'>Establecimiento</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" method="get" action='@Url.Action("Busqueda", "Home")'>
+          <input class="form-control me-2" type="search" placeholder="Search" name="busqueda" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
 
+
+        @{
+          if (ViewBag.User != null)
+          {
+              <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item">
+                  <a class="nav-link" href='@Url.Action("Favoritos","Home")'>Favoritos</a>
+                </li>
+                <li class="nav-item">
+                  Hola @ViewBag.User.nombre
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href='@Url.Action("CerrarSesion","Account")'>Cerrar Sesion</a>
+                </li>
+              </ul>
+          }
+          else
+          {
+              <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item">
+                  <a class="nav-link" href='@Url.Action("IniciarSesion","Account")'>Iniciar Sesion</a>
+                </li>
+              </ul>
+          }
         }
-      }
+      </div>
     </div>
-  </div>
-</nav>
-</header> 
-
+  </nav>
+</header>
 
     <main role="main">
         @RenderBody()
     </main>
 
     <footer>
-        &copy; @DateTime.Now.Year - AlmuerzORT
+      <div class="footer-container">
+          <div class="contact-info">
+              <p><i class="fa fa-phone"></i> +54 9 11 - 2750 - 7289</p>
+              <p><i class="fa fa-envelope"></i> almuerzort@gmail.com</p>
+          </div>
+              <div class="logo">
+              <img src="/img/Logo-AlmuerzORT.png" alt="Logo Almuerzort"/>
+          </div>
+          <div class="social-media">
+              <a href="https://www.instagram.com/almuerzort" target="_blank">
+                  <i class="fab fa-instagram"></i> 
+              </a>
+              <a href="https://www.facebook.com/almuerzort" target="_blank">
+                  <i class="fab fa-facebook"></i>
+              </a>
+          </div>
+      </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -34,12 +34,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/4°IB/Programación/AlmuerzORT/AlmuerzORT/Views/Home/Busqueda.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXNxdWVkYS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [Z:/4°IB/Programación/AlmuerzORT/AlmuerzORT/Views/Home/Establecimiento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFc3RhYmxlY2ltaWVudG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/4°IB/Programación/AlmuerzORT/AlmuerzORT/Views/Home/Favoritos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXZvcml0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/4°IB/Programación/AlmuerzORT/AlmuerzORT/Views/Home/Index.cshtml]
@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [Z:/4°IB/Programación/AlmuerzORT/AlmuerzORT/Views/Home/LugaresRestriccion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMdWdhcmVzUmVzdHJpY2Npb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/4°IB/Programación/AlmuerzORT/AlmuerzORT/Views/Home/ResultadoBusqueda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXN1bHRhZG9CdXNxdWVkYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/4°IB/Programación/AlmuerzORT/AlmuerzORT/Views/Home/TodosEstablecimientos.cshtml]

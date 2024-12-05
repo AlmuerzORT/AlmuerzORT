@@ -55,22 +55,25 @@ static class BD{
         }
         
     }
-    public static int GuardarMeGusta(int id_lugar){
-        string SQL = "UPDATE Establecimientos SET MeGusta = MeGusta + 1 WHERE id_lugar = @pid"; 
-        using(SqlConnection db=new SqlConnection(_ConnectionString)){
-            db.Execute(SQL,new{ pid = id_lugar});
+    public static void GuardarFavorito(int dni_usuario, int id_lugar)
+    {
+        string SQL = "INSERT INTO Favoritos (dni_usuario, id_lugar) VALUES (@dni_usuario, @id_lugar)";
+        
+        using (SqlConnection db = new SqlConnection(_ConnectionString))
+        {
+            db.Execute(SQL, new { dni_usuario, id_lugar });
         }
-        return ObtenerMeGusta(id_lugar);
     }
-    public static int ObtenerMeGusta(int idEstablecimiento){
-        string SQL = "SELECT * FROM Establecimientos WHERE id_lugar = @pidEstablecimiento";
-        Establecimiento lugar = new Establecimiento();
 
-        using(SqlConnection db=new SqlConnection(_ConnectionString)){
-            lugar = db.QueryFirstOrDefault<Establecimiento>(SQL, new{@pidEstablecimiento = idEstablecimiento});
+
+    public static List<Establecimiento> ObtenerFavoritos(int dni_usuario)
+    {
+        string SQL = "SELECT E.* FROM Establecimientos E INNER JOIN Favoritos F ON E.id_lugar = F.id_lugar WHERE F.dni_usuario = @dni_usuario";
+        
+        using (SqlConnection db = new SqlConnection(_ConnectionString))
+        {
+            return db.Query<Establecimiento>(SQL, new { dni_usuario }).ToList();
         }
-
-        return lugar.MeGusta;
     }
 
     public static List<Establecimiento> ObtenerLugares(){
@@ -105,6 +108,46 @@ static class BD{
 
         return listaRestriccion;
     }
+
+    public static List<ComidaxMenu> ObtenerComida(){
+        string SQL = "SELECT * FROM ComidaxMenu";
+        List <ComidaxMenu> listaComida = new List<ComidaxMenu>();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            listaComida = db.Query<ComidaxMenu>(SQL).ToList();
+        }
+
+        return listaComida;
+    }
+
+
+    public static List<PlatoxLugar> ObtenerPlatos(){
+        string SQL = "SELECT * FROM PlatoxLugar";
+        List <PlatoxLugar> listaPlatos = new List<PlatoxLugar>();
+
+        using(SqlConnection db=new SqlConnection(_ConnectionString)){
+            listaPlatos = db.Query<PlatoxLugar>(SQL).ToList();
+        }
+
+        return listaPlatos;
+    }
+
+    public static List<ComidaxMenu> ObtenerMenuPorLugar(int idEstablecimiento)
+{
+    string SQL = @"SELECT C.id_plato, C.nombre_plato, C.descripcion, C.precio, C.id_restriccion 
+                   FROM PlatoxLugar PL
+                   JOIN ComidaxMenu C ON PL.id_plato = C.id_plato
+                   WHERE PL.id_lugar = @idEstablecimiento";
+
+    List<ComidaxMenu> listaMenu = new List<ComidaxMenu>();
+
+    using (SqlConnection db = new SqlConnection(_ConnectionString))
+    {
+        listaMenu = db.Query<ComidaxMenu>(SQL, new { idEstablecimiento }).ToList();
+    }
+
+    return listaMenu;
+}
     
     public static Restricciones ObtenerRestriccion(int idRestriccion){
         string SQL = "SELECT * FROM Restricciones WHERE id_restriccion = @pIdRestriccion";
@@ -118,7 +161,7 @@ static class BD{
     }
 
     public static List<Establecimiento> ObtenerLugaresRestriccion(Restricciones restric){
-        string SQL = "SELECT Establecimientos.nombre, Establecimientos.direccion, Establecimientos.id_lugar, Establecimientos.telefono, Establecimientos.calificacion, Establecimientos.horarios FROM Establecimientos INNER JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar INNER JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato INNER JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE Restricciones.id_restriccion = @pid_restriccion";
+        string SQL = "SELECT Establecimientos.fotos, Establecimientos.nombre, Establecimientos.direccion, Establecimientos.id_lugar, Establecimientos.telefono, Establecimientos.calificacion, Establecimientos.horarios FROM Establecimientos INNER JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar INNER JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato INNER JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE Restricciones.id_restriccion = @pid_restriccion";
         List <Establecimiento> listaLugares = new List<Establecimiento>();
 
         using(SqlConnection db=new SqlConnection(_ConnectionString)){
@@ -146,7 +189,7 @@ static class BD{
     }
 
     public static List<Establecimiento> Busqueda(string buscado){
-        string SQL = "SELECT Establecimientos.nombre, Establecimientos.direccion, Establecimientos.id_lugar, Establecimientos.telefono, Establecimientos.calificacion, Establecimientos.horarios FROM Establecimientos LEFT JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar LEFT JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato LEFT JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE (@buscado = Establecimientos.nombre) OR (@buscado = Restricciones.nombre) OR (@buscado = ComidaxMenu.nombre_plato)";
+        string SQL = "SELECT Establecimientos.nombre, Establecimientos.fotos, Establecimientos.direccion, Establecimientos.id_lugar, Establecimientos.telefono, Establecimientos.calificacion, Establecimientos.horarios, Establecimientos.descripcion FROM Establecimientos LEFT JOIN PlatoxLugar ON PlatoxLugar.id_lugar = Establecimientos.id_lugar LEFT JOIN ComidaxMenu ON ComidaxMenu.id_plato = PlatoxLugar.id_plato LEFT JOIN Restricciones ON Restricciones.id_restriccion = ComidaxMenu.id_restriccion WHERE LOWER(Establecimientos.nombre) LIKE LOWER('%' + @buscado + '%') OR LOWER(Restricciones.nombre) LIKE LOWER('%' + @buscado + '%') OR LOWER(ComidaxMenu.nombre_plato) LIKE LOWER('%' + @buscado + '%')";
         List <Establecimiento> listaLugares = new List<Establecimiento>();
 
         using(SqlConnection db=new SqlConnection(_ConnectionString)){

@@ -1,46 +1,65 @@
-<div id="establecimiento">
-    <div  class="contenedor">
-        <div>
-            <div>
-                <img class="img-establecimiento" 
-                src="https://th.bing.com/th/id/R.41342f5fcb1763c58f4e7de2b7ae2943?rik=GS5IlQEZoTcY%2bQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-VDYz7TehiPY%2fVGuU0tvaz-I%2fAAAAAAAAAig%2fD6q1q1LK5vs%2fs1600%2ffotografia-de-casa-bonita-con-detalles-en-piedra-2-plantas.jpg&ehk=%2fYz8NoMP0v72DCG6dLmI4eXP6XZyLQXSv5CRUK4P5XI%3d&risl=&pid=ImgRaw&r=0" 
-                />
-            </div>
-            <div>
-            </div class="contenedor">
-                <img 
-                    onclick="ActualizarCalificacion(1,1)"
-                    src=https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0"
-                    class="img-estrella"
-                  />
-                <img 
-                     onclick="ActualizarCalificacion(1,2)"
-                     src=https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0" class="img-estrella" />
-                <img   
-                      onclick="ActualizarCalificacion(1,3)"
-                      src=https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0" class="img-estrella" />
-                <img   
-                      onclick="ActualizarCalificacion(1,4)" src=https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0" class="img-estrella" />
-                <img   
-                      onclick="ActualizarCalificacion(1,5)" src=https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0" class="img-estrella" />
-             </div>
-            <div>
-                <p `@Url.Action("Home/")`>
-            
-            </div>
+<div id="establecimiento" class="container mt-5">
+    <div class="row">
+        <!-- Imagen del establecimiento -->
+        <div class="col-md-6">
+            <img src="@ViewBag.Lugar.fotos" class="img-fluid rounded" alt="@ViewBag.Lugar.nombre">
+        </div>
+
+        <!-- Información del establecimiento -->
+        <div class="col-md-6">
+            <h2>@ViewBag.Lugar.nombre</h2>
+            <p><strong>Dirección:</strong> @ViewBag.Lugar.direccion</p>
+            <p><strong>Teléfono:</strong> @ViewBag.Lugar.telefono</p>
+            <p><strong>Calificación:</strong> @ViewBag.Lugar.calificacion estrellas</p>
+            <p><strong>Descripción:</strong> @ViewBag.Lugar.descripcion</p>
         </div>
     </div>
 
-    <p> @ViewBag.Lugar.nombre </p>
-    <button id="favoriteButton" class="favorite-button" data-lugar-id="1" data-usuario-dni="12345678">
-    <i class="fas fa-heart"></i> <!-- Usando Font Awesome para el ícono -->
-    </button>
+    <!-- Estrellas para la calificación -->
+    <div class="text-center mt-3">
+        <h5>Califica este establecimiento:</h5>
+        <div class="estrellas">
+            <img onclick="ActualizarCalificacion(1,1)" src="https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0" class="img-estrella" />
+            <img onclick="ActualizarCalificacion(1,2)" src="https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0" class="img-estrella" />
+            <img onclick="ActualizarCalificacion(1,3)" src="https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0" class="img-estrella" />
+            <img onclick="ActualizarCalificacion(1,4)" src="https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0" class="img-estrella" />
+            <img onclick="ActualizarCalificacion(1,5)" src="https://th.bing.com/th/id/R.ce494a4fe33aa36b7b3171c7a8ba7aac?rik=LqEK6sk5c9OzkQ&pid=ImgRaw&r=0" class="img-estrella" />
+        </div>
+    </div>
 
-    //info del lugar (foto, estrellas, enviar reseña, descripcion, boton agregar a favoritos, boton de chat)
+    <!-- Botón de favorito -->
+    <div class="text-center mt-3">
+        <button id="favoriteButton" class="favorite-button" data-lugar-id="1" data-usuario-dni="12345678">
+            <i class="fas fa-heart"></i> <!-- Usando Font Awesome para el ícono -->
+        </button>
+    </div>
 
-
-    <p>Reseñas & Calificaciones </p>
-    <p> Menu </p>
-    <p> Apto Restricciones </p>
-    <p>¿Cómo llegar?</p>
+    <!-- Menú -->
+    <div class="menu-section text-center mt-5">
+        <h3>Menú</h3>
+        <div class="row justify-content-center">
+            @if (ViewBag.menu != null && ViewBag.menu.Count > 0)
+            {
+                @foreach (ComidaxMenu plato in ViewBag.menu)
+                {
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <h5 class="card-title">@plato.nombre_plato</h5>
+                                <p class="card-text">@plato.descripcion</p>
+                                <p class="card-text"><strong>Precio:</strong> $@plato.precio</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-12">
+                    <p class="text-muted">No hay platos disponibles en el menú.</p>
+                </div>
+            }
+        </div>
+    </div>
 </div>
+

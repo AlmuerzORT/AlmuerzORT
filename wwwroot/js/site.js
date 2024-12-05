@@ -46,22 +46,22 @@ function VerificarForm(){
     }
 }
 
-function GuardarMeGusta(id)
-{
-    $.ajax(
-        {
-            url: '/Home/GuardarMeGusta',
-            type: 'POST',
-            dataType: 'JSON',
-            data: {id_lugar: id},
-            success: function (response)
-            {
-                $("#MeGusta").html("Me Gusta:" + response);
-                //inabiolitar boton parano dar mas de un like
+function GuardarMeGusta(id) {
+    $.ajax({
+        url: '/Home/GuardarFavorito',
+        type: 'POST',
+        dataType: 'JSON',
+        data: { id_lugar: id },
+        success: function (response) {
+            if (response.success) {
+                alert('Establecimiento guardado en favoritos.');
+            } else {
+                alert('Error al guardar en favoritos.');
             }
         }
-    );
+    });
 }
+
 
 function ActualizarCalificacion (id, calificacion){
     const filledStar = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkgELUJ0b4w4ijfiEZeLhokUSjaa3g3Kds9g&s"

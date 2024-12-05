@@ -67,6 +67,7 @@ public class AccountController : Controller
         }
     }
 
+
     public IActionResult Olvide(){
         return View();
     }
@@ -102,5 +103,9 @@ public class AccountController : Controller
             ViewBag.ContraNoActualizada = "Tu nueva contraseña no puede ser igual a la anterior";
             return View ("Olvide");
         }
+    }
+
+    public IActionResult Favoritos(){
+        return View();
     }
 }

@@ -1,0 +1,32 @@
+@{
+    ViewBag.Title = "Resultados de Búsqueda";
+}
+
+<h2>Resultados para: "@ViewBag.Busqueda"</h2>
+
+@if (ViewBag.Resultado != null && ViewBag.Resultado.Count > 0)
+{
+    <div class="row">
+        @foreach (Establecimiento lugar in ViewBag.Resultado)
+        {
+            <div class="col-md-4">
+                <div class="card custom-card">
+                    <img src="@lugar.fotos" class="card-img-top" alt="@lugar.nombre">
+                    <div class="card-body">
+                        <h5 class="card-title">@lugar.nombre</h5>
+                        <a href='@Url.Action("VerEstablecimiento", "Home", new { idEstablecimiento = lugar.id_lugar })' class="btn custom-btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>@ViewBag.NoHayResultado</p>
+}
+
+
+                            
+                                
+                               
