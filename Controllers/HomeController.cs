@@ -106,6 +106,18 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult Favoritos()
     {
+         if (HttpContext.Session.GetString("user")!=null)
+        {
+            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+        }
+        return View();
+    }
+
+    public IActionResult Perfil(){
+        if (HttpContext.Session.GetString("user")!=null)
+        {
+            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+        }
         return View();
     }
 
