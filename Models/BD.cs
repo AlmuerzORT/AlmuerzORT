@@ -198,4 +198,14 @@ static class BD{
         return listaLugares;
     }
 
+    public static void GuardarReseña(string reseña, int id_lugar, int dniUsuario){
+            string SQL = "INSERT INTO Reseñas (contenido, id_lugar, dni_usuario) VALUES (@reseña, @id_lugar,@dniUsuario)";
+            using (SqlConnection db = new SqlConnection(_ConnectionString))
+            {
+                db.Execute(SQL, new { reseña, id_lugar,dniUsuario}); //VER ERROR
+            }
+    }
+
+   
+
 }

@@ -34,6 +34,17 @@
         </button>
     </div>
 
+    <div>
+    <h1> Escribí tu reseña</h1>
+    <form method="post" action='@Url.Action("GuardarReseña","Home")' > <!-- formulario reseñas -->
+        <input type="text" name="reseña" id="reseña" />
+        <input type="hidden" name="id_lugar" value="@ViewBag.Lugar.id_lugar" />
+        <input type="hidden" name="user" value="@ViewBag.User.dni" />
+        <input type="submit" value="enviar reseña"/>
+    </form>
+        <p> @ViewBag.mensajeReseñaExitosa</p>
+    </div>
+
     <!-- Menú -->
     <div class="menu-section text-center mt-5">
         <h3>Menú</h3>

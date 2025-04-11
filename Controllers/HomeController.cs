@@ -79,7 +79,7 @@ public class HomeController : Controller
 
     public IActionResult Busqueda(string busqueda){
         
-         if (HttpContext.Session.GetString("user")!=null)
+        if (HttpContext.Session.GetString("user")!=null)
         {
             ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
         }
@@ -103,7 +103,7 @@ public class HomeController : Controller
         ViewBag.listaEstablecimientos = BD.ObtenerLugares();
         return View ();
     }
-    [HttpGet]
+    [HttpGet] //REVISAR ESTE GET PARA VER PORQUE NO ANDA LA SESION EN FAVORITOS
     public IActionResult Favoritos()
     {
          if (HttpContext.Session.GetString("user")!=null)
@@ -119,6 +119,18 @@ public class HomeController : Controller
             ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
         }
         return View();
+    }
+
+    [HttpPost]
+    public IActionResult GuardarReseña(string reseña, int id_lugar, int userdni){
+        if (HttpContext.Session.GetString("user")!=null)
+        {
+            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+            BD.GuardarReseña(reseña, id_lugar , userdni);
+        }
+        ViewBag.mensajeReseñaExitosa = "enviaste la reseña!";
+        return View("Establecimiento");
+        
     }
 
 }
