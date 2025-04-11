@@ -106,18 +106,6 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult Favoritos()
     {
-
-        int? dni_usuario = HttpContext.Session.GetInt32("DNI");
-
-        if (dni_usuario != null)
-        {
-            string userName = HttpContext.Session.GetString("UserName");
-            List<Establecimiento> favoritos = BD.ObtenerFavoritos(dni_usuario.Value);
-
-            ViewBag.UserName = userName;
-            ViewBag.Favoritos = favoritos;
-        }
-        
         return View();
     }
 

@@ -18,3 +18,16 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script src="/js/session.js"></script>
+    <script>
+        document.querySelector("form").addEventListener("submit", function () {
+            const usuarioInput = document.querySelector("input[name='nombreUsuario']");
+            if (usuarioInput) {
+                const usuario = { nombreUsuario: usuarioInput.value };
+                guardarUsuarioSesion(usuario);
+            }
+        });
+    </script>
+}

@@ -1,6 +1,10 @@
 @{
-    ViewData["Title"] = "Favoritos";
+     Layout = "~/Views/Shared/_Layout.cshtml";
+      ViewData["Title"] = "Favoritos";
 }
+   
+   
+
 
 @if (ViewBag.UserName != null)
 {
@@ -39,3 +43,7 @@ else
         <a href='@Url.Action("IniciarSesion", "Account")' class="btn btn-primary">Iniciar sesión</a>
     </div>
 }
+
+
+
+
