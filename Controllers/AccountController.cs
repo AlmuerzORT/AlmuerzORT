@@ -34,6 +34,8 @@ public class AccountController : Controller
     public IActionResult GuardarRegistro(Usuario user){ 
         if(BD.UsuarioValido(user.dni)) {
             BD.GuardarRegistro(user);
+            // Store user in session after successful registration
+            HttpContext.Session.SetString("user", user.ToString());
             ViewBag.user = user;
             return View("PostLogin");
         }

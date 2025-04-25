@@ -207,7 +207,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\48043270\\.nuget\\packages\\": {}
+    "C:\\Users\\48796333\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -215,11 +215,11 @@
       "projectUniqueName": "C:\\AlmuerzORT\\AlmuerzORT.csproj",
       "projectName": "AlmuerzORT",
       "projectPath": "C:\\AlmuerzORT\\AlmuerzORT.csproj",
-      "packagesPath": "C:\\Users\\48043270\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\48796333\\.nuget\\packages\\",
       "outputPath": "C:\\AlmuerzORT\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\48043270\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\48796333\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
