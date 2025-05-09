@@ -1,123 +1,127 @@
 {
   "Files": [
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\Data\\AlmuerzORT.sql",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\Data\\AlmuerzORT.sql",
       "PackagePath": "staticwebassets\\Data\\AlmuerzORT.sql"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\Thumbs.db",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\Thumbs.db",
       "PackagePath": "staticwebassets\\Thumbs.db"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\css\\perfil.css",
+      "PackagePath": "staticwebassets\\css\\perfil.css"
+    },
+    {
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\Banner.png",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\Banner.png",
       "PackagePath": "staticwebassets\\img\\Banner.png"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\CeliacoLogo.png",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\CeliacoLogo.png",
       "PackagePath": "staticwebassets\\img\\CeliacoLogo.png"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\FondoLogin.jpg",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\FondoLogin.jpg",
       "PackagePath": "staticwebassets\\img\\FondoLogin.jpg"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\KosherLogo.png",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\KosherLogo.png",
       "PackagePath": "staticwebassets\\img\\KosherLogo.png"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\Logo-AlmuerzORT.png",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\Logo-AlmuerzORT.png",
       "PackagePath": "staticwebassets\\img\\Logo-AlmuerzORT.png"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\Recurso 1.svg",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\Recurso 1.svg",
       "PackagePath": "staticwebassets\\img\\Recurso 1.svg"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\Recurso 2.svg",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\Recurso 2.svg",
       "PackagePath": "staticwebassets\\img\\Recurso 2.svg"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\Recurso 3.svg",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\Recurso 3.svg",
       "PackagePath": "staticwebassets\\img\\Recurso 3.svg"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\Thumbs.db",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\Thumbs.db",
       "PackagePath": "staticwebassets\\img\\Thumbs.db"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\VeganoLogo.png",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\VeganoLogo.png",
       "PackagePath": "staticwebassets\\img\\VeganoLogo.png"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\VegetarianoLogo.png",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\VegetarianoLogo.png",
       "PackagePath": "staticwebassets\\img\\VegetarianoLogo.png"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\estrellaConFondo.png",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\estrellaConFondo.png",
       "PackagePath": "staticwebassets\\img\\estrellaConFondo.png"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\img\\estrellaSinFondo.png",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\img\\estrellaSinFondo.png",
       "PackagePath": "staticwebassets\\img\\estrellaSinFondo.png"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\js\\session.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\js\\session.js",
       "PackagePath": "staticwebassets\\js\\session.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\devandroid\\AlmuerzORT\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

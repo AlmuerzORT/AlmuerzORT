@@ -1,1 +1,65 @@
-<p>HOLA PERFIL @ViewBag.User.nombre</p>
+<link rel="stylesheet" href="~/css/perfil.css" />
+
+
+@if (ViewBag.User != null)
+{
+    <div class="perfil-container">
+        <div class="izq-perfil">
+            <h2>Información del perfil</h2>
+            <img src="@ViewBag.User.imagen" alt="Foto de perfil" class="foto-perfil">
+        </div>
+        <div class="perfil-form">
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" value="@ViewBag.User.nombre" readonly />
+            </div>
+
+
+            <div class="form-group">
+                <label>Apellido</label>
+                <input type="text" value="@ViewBag.User.apellido" readonly />
+            </div>
+
+
+            <div class="form-group">
+                <label>Usuario</label>
+                <input type="text" value="@ViewBag.User.usuario" readonly />
+            </div>
+
+
+            <div class="form-group">
+                <label>Correo electrónico</label>
+                <input type="text" value="@ViewBag.User.mail" readonly />
+            </div>
+
+
+            <div class="form-group">
+                <label>Descripción</label>
+                <textarea readonly style="resize: none;">@ViewBag.User.descripcion</textarea>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>No se pudo cargar el perfil.</p>
+}
+
+<div class="reseñas-container">
+    <h2>Mis reseñas</h2>
+    @if (ViewBag.MisReseñas != null && ViewBag.MisReseñas.Count > 0)
+    {
+        <ul class="reseñas-lista">
+            @foreach (var r in ViewBag.MisReseñas)
+            {
+                <li><strong>@r.nombreLugar:</strong> @r.contenido</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p class="reseñas-vacia">No tenés reseñas aún.</p>
+    }
+</div>
+
+

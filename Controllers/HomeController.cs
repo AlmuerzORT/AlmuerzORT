@@ -27,15 +27,22 @@ public class HomeController : Controller
     }
 
     public IActionResult VerEstablecimiento(int idEstablecimiento)
+{
+    var userStr = HttpContext.Session.GetString("user");
+    if (userStr != null)
     {
-        if (HttpContext.Session.GetString("user")!=null)
-        {
-            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
-        }
-        ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
-        ViewBag.Menu = BD.ObtenerMenuPorLugar(idEstablecimiento);
-        return View("Establecimiento");
+        ViewBag.User = Usuario.FromString(userStr);
     }
+    else
+    {
+        ViewBag.User = null; // Lo seteás para evitar errores
+    }
+
+    ViewBag.Lugar = BD.ObtenerLugar(idEstablecimiento);
+    ViewBag.Menu = BD.ObtenerMenuPorLugar(idEstablecimiento);
+    return View("Establecimiento");
+}
+
 
     public IActionResult VerLugaresXRestriccion(int idRestriccion){
         if (HttpContext.Session.GetString("user")!=null)
@@ -113,25 +120,35 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Perfil(){
-        if (HttpContext.Session.GetString("user")!=null)
+    public IActionResult Perfil()
+    {
+        if (HttpContext.Session.GetString("user") != null)
         {
-            ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
+            Usuario user = Usuario.FromString(HttpContext.Session.GetString("user"));
+            ViewBag.User = user;
+            ViewBag.MisReseñas = BD.ObtenerReseñasPorUsuario(user.dni);
         }
         return View();
     }
 
+
     [HttpPost]
-    public IActionResult GuardarReseña(string reseña, int id_lugar, int userdni){
-        if (HttpContext.Session.GetString("user")!=null)
+    public IActionResult GuardarReseña(string reseña, int id_lugar, int userdni)
+    {
+        if (HttpContext.Session.GetString("user") != null)
         {
             ViewBag.User = Usuario.FromString(HttpContext.Session.GetString("user"));
-            BD.GuardarReseña(reseña, id_lugar , userdni);
         }
-        ViewBag.mensajeReseñaExitosa = "enviaste la reseña!";
+
+        ViewBag.Lugar = BD.ObtenerLugar(id_lugar);
+        ViewBag.Menu = BD.ObtenerMenuPorLugar(id_lugar); 
+
+        BD.GuardarReseña(reseña, id_lugar, userdni);
+        ViewBag.mensajeReseñaExitosa = "Reseña enviada con éxito 😎";
+
         return View("Establecimiento");
-        
     }
+
 
 }
 

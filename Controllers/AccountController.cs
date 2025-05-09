@@ -110,4 +110,17 @@ public class AccountController : Controller
     public IActionResult Favoritos(){
         return View();
     }
+
+    public IActionResult Perfil()
+    {
+        if (HttpContext.Session.GetString("user") != null)
+        {
+            Usuario user = Usuario.FromString(HttpContext.Session.GetString("user"));
+            return View(user);
+        }
+
+
+        return RedirectToAction("IniciarSesion", "Account");
+    }
+
 }

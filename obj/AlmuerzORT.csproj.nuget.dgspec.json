@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AlmuerzORT\\AlmuerzORT.csproj": {}
+    "C:\\Users\\devandroid\\AlmuerzORT\\AlmuerzORT.csproj": {}
   },
   "projects": {
-    "C:\\AlmuerzORT\\AlmuerzORT.csproj": {
+    "C:\\Users\\devandroid\\AlmuerzORT\\AlmuerzORT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AlmuerzORT\\AlmuerzORT.csproj",
+        "projectUniqueName": "C:\\Users\\devandroid\\AlmuerzORT\\AlmuerzORT.csproj",
         "projectName": "AlmuerzORT",
-        "projectPath": "C:\\AlmuerzORT\\AlmuerzORT.csproj",
-        "packagesPath": "C:\\Users\\48796333\\.nuget\\packages\\",
-        "outputPath": "C:\\AlmuerzORT\\obj\\",
+        "projectPath": "C:\\Users\\devandroid\\AlmuerzORT\\AlmuerzORT.csproj",
+        "packagesPath": "C:\\Users\\devandroid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\devandroid\\AlmuerzORT\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\48796333\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\devandroid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

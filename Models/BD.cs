@@ -206,6 +206,29 @@ static class BD{
             }
     }
 
+    public static List<Reseña> ObtenerReseñasPorUsuario(int dni_usuario)
+    {
+        List<Reseña> lista = new List<Reseña>();
+        using (SqlConnection con = new SqlConnection(_ConnectionString))
+        {
+            string query = "SELECT R.contenido, E.nombre FROM Reseñas R JOIN Establecimientos E ON R.id_lugar = E.id_lugar WHERE dni_usuario = @dni";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@dni", dni_usuario);
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Reseña res = new Reseña();
+                res.contenido = reader["contenido"].ToString();
+                res.nombreLugar = reader["nombre"].ToString();
+                lista.Add(res);
+            }
+            con.Close();
+        }
+        return lista;
+}
+
+
    
 
 }

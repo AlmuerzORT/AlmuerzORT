@@ -10,11 +10,13 @@ public class Usuario{
     public string usuario {get; set;}
     public string descripcion {get; set;}
     public string contraseña {get; set;}
+    public string imagen {get; set;}
+
 
 
     public Usuario(){}
 
-    public Usuario(string nom, string ap, string mai, string us, string con, int d, string desc){
+    public Usuario(string nom, string ap, string mai, string us, string con, int d, string desc, string img){
         dni = d;
         nombre = nom;
         apellido = ap;
@@ -22,6 +24,7 @@ public class Usuario{
         usuario = us;
         contraseña = con;
         descripcion = desc;
+        imagen = img;
     }
  public override string ToString()
     {
